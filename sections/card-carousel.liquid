@@ -1,0 +1,194 @@
+<!-- Add the slick-theme.css if you want default styling -->
+<link
+rel="stylesheet"
+  type="text/css"
+  href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<!-- Add the slick-theme.css if you want default styling -->
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+<section class="section section-card-carousel">
+  <img
+    src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/vector111.svg?v=1689045749"
+    alt=""
+    class="vectors vector-1">
+  <img
+    src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/Vector_112.svg?v=1689046100"
+    alt=""
+    class="vectors vector-2">
+  <div class="dash-line-container">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/dash_line-2.svg?v=1689046674"
+      alt=""
+      class="dash-1">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/dash_line-1.svg?v=1689046694"
+      alt=""
+      class="dash-2">
+  </div>
+  <div class="page-width">
+    <div id="card-carousel" class="card-carousel-main">
+      {% for block in section.blocks %}
+        <div class="carousel-cell">
+          <div class="content-wrapper">
+            <div class="icon-wrapper">
+              <img
+                src="{{ block.settings.card_icon | img_url }}"
+                alt=""
+                class="icon">
+            </div>
+            <h3>
+              {{ block.settings.card_title }}
+            </h3>
+            <p>
+              {{ block.settings.card_text }}
+            </p>
+            <a href="{{ block.settings.url_link }}" class="link">
+              {{ block.settings.link_title }}
+            </a>
+            <a href="{{ block.settings.btn_link }}" class="btn btn-site">
+              {{ block.settings.btn_title }}
+            </a>
+          </div>
+        </div>
+      {% endfor %}
+
+    </div>
+    {% comment %}
+    <div id="card-carousel2" class="card-carousel-main mobile">
+    {% for block in section.blocks %}
+    <div class="carousel-cell">
+    <div class="content-wrapper">
+    <div class="icon-wrapper">
+    <img
+    src="{{ block.settings.card_icon | img_url }}"
+    alt=""
+    class="icon">
+    </div>
+    <h3>
+    {{ block.settings.card_title }}
+    </h3>
+    <p>
+    {{ block.settings.card_text }}
+    </p>
+    <a href="{{ block.settings.url_link }}" class="link">
+    {{ block.settings.link_title }}
+    </a>
+    <a href="{{ block.settings.btn_link }}" class="btn btn-site">
+    {{ block.settings.btn_title }}
+    </a>
+    </div>
+    </div>
+    {% endfor %}
+
+    </div>
+    {% endcomment %}</div>
+</section>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+  // $("#card-carousel").flickity({
+// wrapAround: true,
+// pageDots: true,
+// initialIndex: 1,
+// accessibility: true, //true by default
+// });
+
+  $(document).ready(function() {
+    $('#card-carousel').slick({
+      dots: true,
+      infinite: true,
+      arrows: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      loop: true,
+      mobileFirst: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  }){% comment %}$(document).ready(function() {
+      $('#card-carousel2').slick({
+        dots: true,
+        infinite: true,
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        loop: true,
+        mobileFirst: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    }){% endcomment %}
+</script>
+
+{% schema %}
+  {
+    "name": "Card carousel section",
+    "settings": [],
+    "blocks": [
+      {
+        "name": "cards",
+        "type": "Cards",
+        "settings": [
+          {
+            "type": "text",
+            "id": "card_title",
+            "label": "Card title"
+          },
+          {
+            "type": "text",
+            "id": "card_text",
+            "label": "Card text"
+          },
+          {
+            "type": "image_picker",
+            "id": "card_icon",
+            "label": "Card icon"
+          },
+          {
+            "type": "text",
+            "id": "link_title",
+            "label": "Link title",
+            "default": "Read More"
+          }, {
+            "type": "url",
+            "id": "url_link",
+            "label": "link url",
+            "default": "/"
+          }, {
+            "type": "text",
+            "id": "btn_title",
+            "label": "Button title",
+            "default": "See More"
+          }, {
+            "type": "url",
+            "id": "btn_link",
+            "label": "Button url",
+            "default": "/"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Card carousel section"
+      }
+    ]
+  }
+{% endschema %}

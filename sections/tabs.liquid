@@ -1,0 +1,204 @@
+<section class="section section-tabs">
+  <div class="page-width">
+    <h2 class="title center inline-richtext h2 scroll-trigger animate--slide-in">
+      Looking for favourite t-shirt ?
+    </h2>
+
+    <div class="tab">
+      <div class="btn-tab-container">
+        {% for block in section.blocks %}
+
+          <button class="tablinks {% if forloop.index == 1 %}active{% endif %}" onclick="openTab(event, 'tab{{ forloop.index }}')">{{ block.settings.tab_head_title }}</button>
+
+        {% endfor %}
+      </div>
+    </div>
+
+    {% for block in section.blocks %}
+      <div id="tab{{ forloop.index }}" class="tabcontent">
+        <div class="row">
+          <div class="col-6">
+            {% if block.settings.tab_thumbnail != blank %}
+              <div class="thumbnail-container">
+                <img
+                  src="{{ block.settings.tab_thumbnail | img_url: 'master' }}"
+                  alt=""
+                  class="thumbnail">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/video_button_3becfa36-f76f-4b41-acc8-2ef5305be978.svg?v=1688988863"
+                  alt=""
+                  class="play-button">
+              </div>
+            {% endif %}
+            {% if block.settings.tab_small_image != blank %}
+              <img
+                src="{{ block.settings.tab_small_image | img_url: 'master' }}"
+                class="blackthumb"
+                alt="">
+            {% endif %}
+          </div>
+          <div class="col-6 content-column">
+            <img
+              class="orange-bg"
+              src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/orange_elipsis.png?v=1689146635"
+              alt="">
+            <div class="content-conainer">
+              {% if block.settings.tab_content_title != blank %}
+                {{ block.settings.tab_content_title }}
+              {% endif %}
+              {% if block.settings.tab_content_text != blank %}
+                {{ block.settings.tab_content_text }}
+              {% endif %}
+              {% if block.settings.tab_btn_text != blank %}
+                <a href="{{ block.settings.tab_btn_link  }}" class="btn btn-orange">
+                  {{ block.settings.tab_btn_text }}
+                </a>
+              {% endif %}
+              <div class="line-container">
+                <span class="start-num">01</span>
+                <img src="{{ 'line.svg' | asset_url }}" alt="">
+                <span class="end-num">03</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+
+
+    {% comment %}
+    <div class="tab">
+    <div class="btn-tab-container">
+    <button class="tablinks active" onclick="openTab(event, 'tab1')">All</button>
+    <button class="tablinks" onclick="openTab(event, 'tab2')">Assecories</button>
+    <button class="tablinks" onclick="openTab(event, 'tab3')">Catagories</button>
+    <button class="tablinks" onclick="openTab(event, 'tab4')">T-sirt</button>
+    </div>
+    </div>
+
+    <div id="tab1" class="tabcontent">
+
+    <div class="row">
+    <div class="col-6">
+    <div class="thumbnail-container">
+    <img
+    src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/thumbnail.png?v=1688988795"
+    alt=""
+    class="thumbnail">
+    <img
+    src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/video_button_3becfa36-f76f-4b41-acc8-2ef5305be978.svg?v=1688988863"
+    alt=""
+    class="play-button">
+    </div>
+    <img
+    src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/blackthumb.png?v=1688989488"
+    class="blackthumb"
+    alt="">
+    </div>
+    <div class="col-6 content-column">
+    <img
+    class="orange-bg"
+    src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/Service_section_orange.svg?v=1688991342"
+    alt="">
+    <div class="content-conainer">
+    <h2>
+    Why <br>Choose Us
+    </h2>
+    <p class="description">
+    Get lost on the beautiful beaches of United, or get caught up in the wildness of the night life. Its up to you. Nihil quaeque moderatius quo ut, eu vix noster fierent
+    </p>
+    <a href="" class="btn btn-orange">
+    ORDER NOW
+    </a>
+    </div>
+    </div>
+    </div>
+
+    </div>
+
+    <div id="tab2" class="tabcontent">
+    Contents of tab 2
+    </div>
+
+    <div id="tab3" class="tabcontent">
+    Contents of tab 3
+    </div>
+    <div id="tab4" class="tabcontent">
+    Contents of tab 4
+    </div>
+
+    {% endcomment %}
+
+  </div>
+</section>
+
+<script>
+  function openTab(evt, tabName) {
+    var i,
+      tabcontent,
+      tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  document.getElementById('tab1').style.display = "block";
+</script>
+
+{% schema %}
+  {
+    "name": "Tabs section",
+    "settings": [],
+    "blocks": [
+      {
+        "name": "tab",
+        "type": "Tab",
+        "settings": [
+          {
+            "type": "text",
+            "id": "tab_head_title",
+            "label": "Tab hading title"
+          },
+          {
+            "type": "richtext",
+            "id": "tab_content_title",
+            "label": "Tab content title"
+          },
+          {
+            "type": "richtext",
+            "id": "tab_content_text",
+            "label": "Tab content text"
+          },
+          {
+            "type": "text",
+            "id": "tab_btn_text",
+            "label": "Tab button title"
+          }, {
+            "type": "url",
+            "id": "tab_content_link",
+            "label": "Tab content link"
+          }, {
+            "type": "image_picker",
+            "id": "tab_thumbnail",
+            "label": "Tab thumbnail"
+          }, {
+            "type": "image_picker",
+            "id": "tab_small_image",
+            "label": "Tab small image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Tabs section"
+      }
+    ]
+  }
+{% endschema %}

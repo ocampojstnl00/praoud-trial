@@ -1,0 +1,45 @@
+<section class="section section-experience">
+    <div class="page-width">
+        <div class="row">
+            <div class="col-6">
+                <div class="testimonial-contianer">
+                    <h3>
+                        {{ section.settings.section_title }}
+                    </h3>
+                    <div class="image-container">
+                        <img src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/comma.svg?v=1688972378" alt="" class="quote">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 image-container-column">
+                <img src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/Group_with_video.svg?v=1688973030" alt="" class="group-video">
+                <div class="image-container"> 
+                    <img src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/Vector-image-box.svg?v=1688973672" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+    {
+      "name": "Experience section",
+      "settings": [
+        {
+        "type": "header",
+        "content": "Section contents"
+      },
+      {
+        "type": "text",
+        "id": "section_title",
+        "label": "Section title",
+        "default": "Enter text here"
+      }
+      ],
+      "presets": [
+        {
+          "name": "Experience section"
+        }
+      ]
+    }
+  {% endschema %}

@@ -1,0 +1,1336 @@
+<section class="section section-information-table">
+  <img
+    src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/abstract-drops_-_1.svg?v=1689069969"
+    alt=""
+    class="abtract-drop abtract-drop-1">
+  <img
+    src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/abstract-drops_-_1.svg?v=1689069969"
+    alt=""
+    class="abtract-drop abtract-drop-2">
+  <div class="page-width">
+    <h2 class="title center inline-richtext h2 scroll-trigger animate--slide-in">
+      Have Any Question ?
+    </h2>
+    <div class="tabbedPanels">
+      <div class="tab-heading-container">
+        <ul class="tabs">
+          {% if section.settings.tab_head_title_1 != blank %}
+            <li>
+              <a href="#panel1">{{ section.settings.tab_head_title_1 }}</a>
+            </li>
+          {% endif %}
+          {% if section.settings.tab_head_title_2 != blank %}
+            <li>
+              <a href="#panel2">{{ section.settings.tab_head_title_2 }}</a>
+            </li>
+          {% endif %}
+          {% if section.settings.tab_head_title_3 != blank %}
+            <li>
+              <a href="#panel3">{{ section.settings.tab_head_title_3 }}</a>
+            </li>
+          {% endif %}
+          {% if section.settings.tab_head_title_4 != blank %}
+            <li>
+              <a href="#panel4">{{ section.settings.tab_head_title_4 }}</a>
+            </li>
+          {% endif %}
+          {% if section.settings.tab_head_title_5 != blank %}
+            <li>
+              <a href="#panel5">{{ section.settings.tab_head_title_5 }}</a>
+            </li>
+          {% endif %}
+        </ul>
+      </div>
+      <div class="panelContainer">
+        {% if section.settings.tab_head_title_1 != blank %}
+          <div id="panel1" class="panel">
+            <div class="row">
+              {% for block in section.blocks %}
+                {% if block.type == 'block-1' %}
+                  {% if block.settings.tab_for == section.settings.tab_head_title_1 %}
+                    <div class="col-6">
+                      <div class="card">
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/strock_sine.svg?v=1689069096"
+                          alt=""
+                          class="stock-sine">
+                        <span class="type">
+                          {{ block.settings.block_title }}
+                        </span>
+                        <div class="price">
+                          <span class="number">
+                            ${{ block.settings.block_price }}
+                          </span>
+                          <span class="month">
+                            /{{ block.settings.block_duration }}
+                          </span>
+                        </div>
+                        <ul class="checklist">
+                          {% if block.settings.block_list1_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list1_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list2_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list2_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list3_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list3_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list4_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list4_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list5_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list5_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list6_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list6_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                        </ul>
+                        {% if block.settings.block_btn_text != blank %}
+                          <a href="{{ block.settings.block_btn_link }}" class="btn site-btn">
+                            {{ block.settings.block_btn_text }}
+                          </a>
+                        {% endif %}
+                      </div>
+                    </div>
+                  {% endif %}
+                {% endif %}
+                {% if block.type == 'block-2' %}
+                  {% if block.settings.tab_for == section.settings.tab_head_title_3 %}
+                    <div class="col-6">
+                      <div class="card">
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/strock_box_2.svg?v=1689069800"
+                          alt=""
+                          class="stock-sine">
+                        <span class="type">
+                          {{ block.settings.block_title }}
+                        </span>
+                        <div class="price">
+                          <span class="number">
+                            ${{ block.settings.block_price }}
+                          </span>
+                          <span class="month">
+                            /{{ block.settings.block_duration }}
+                          </span>
+                        </div>
+                        <ul class="checklist">
+                          {% if block.settings.block_list1_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list1_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list2_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list2_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list3_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list3_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list4_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list4_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list5_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list5_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list6_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list6_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                        </ul>
+                        {% if block.settings.block_btn_text != blank %}
+                          <a href="{{ block.settings.block_btn_link }}" class="btn btn-orange">
+                            {{ block.settings.block_btn_text }}
+                          </a>
+                        {% endif %}
+                      </div>
+                    </div>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        {% endif; %}
+        {% if section.settings.tab_head_title_2 != blank %}
+          <div id="panel2" class="panel">
+            <div class="row">
+              {% for block in section.blocks %}
+                {% if block.type == 'block-1' %}
+                  {% if block.settings.tab_for == section.settings.tab_head_title_2 %}
+                    <div class="col-6">
+                      <div class="card">
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/strock_sine.svg?v=1689069096"
+                          alt=""
+                          class="stock-sine">
+                        <span class="type">
+                          {{ block.settings.block_title }}
+                        </span>
+                        <div class="price">
+                          <span class="number">
+                            ${{ block.settings.block_price }}
+                          </span>
+                          <span class="month">
+                            /{{ block.settings.block_duration }}
+                          </span>
+                        </div>
+                        <ul class="checklist">
+                          {% if block.settings.block_list1_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list1_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list2_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list2_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list3_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list3_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list4_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list4_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list5_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list5_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list6_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list6_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                        </ul>
+                        {% if block.settings.block_btn_text != blank %}
+                          <a href="{{ block.settings.block_btn_link }}" class="btn site-btn">
+                            {{ block.settings.block_btn_text }}
+                          </a>
+                        {% endif %}
+                      </div>
+                    </div>
+                  {% endif %}
+                {% endif %}
+                {% if block.type == 'block-2' %}
+                  {% if block.settings.tab_for == section.settings.tab_head_title_3 %}
+                    <div class="col-6">
+                      <div class="card">
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/strock_box_2.svg?v=1689069800"
+                          alt=""
+                          class="stock-sine">
+                        <span class="type">
+                          {{ block.settings.block_title }}
+                        </span>
+                        <div class="price">
+                          <span class="number">
+                            ${{ block.settings.block_price }}
+                          </span>
+                          <span class="month">
+                            /{{ block.settings.block_duration }}
+                          </span>
+                        </div>
+                        <ul class="checklist">
+                          {% if block.settings.block_list1_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list1_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list2_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list2_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list3_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list3_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list4_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list4_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list5_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list5_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list6_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list6_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                        </ul>
+                        {% if block.settings.block_btn_text != blank %}
+                          <a href="{{ block.settings.block_btn_link }}" class="btn btn-orange">
+                            {{ block.settings.block_btn_text }}
+                          </a>
+                        {% endif %}
+                      </div>
+                    </div>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        {% endif; %}
+        {% if section.settings.tab_head_title_3 != blank %}
+          <div id="panel3" class="panel">
+            <div class="row">
+              {% for block in section.blocks %}
+                {% if block.type == 'block-1' %}
+                  {% if block.settings.tab_for == section.settings.tab_head_title_3 %}
+                    <div class="col-6">
+                      <div class="card">
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/strock_sine.svg?v=1689069096"
+                          alt=""
+                          class="stock-sine">
+                        <span class="type">
+                          {{ block.settings.block_title }}
+                        </span>
+                        <div class="price">
+                          <span class="number">
+                            ${{ block.settings.block_price }}
+                          </span>
+                          <span class="month">
+                            /{{ block.settings.block_duration }}
+                          </span>
+                        </div>
+                        <ul class="checklist">
+                          {% if block.settings.block_list1_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list1_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list2_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list2_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list3_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list3_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list4_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list4_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list5_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list5_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list6_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list6_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                        </ul>
+                        {% if block.settings.block_btn_text != blank %}
+                          <a href="{{ block.settings.block_btn_link }}" class="btn site-btn">
+                            {{ block.settings.block_btn_text }}
+                          </a>
+                        {% endif %}
+                      </div>
+                    </div>
+                  {% endif %}
+                {% endif %}
+                {% if block.type == 'block-2' %}
+                  {% if block.settings.tab_for == section.settings.tab_head_title_3 %}
+                    <div class="col-6">
+                      <div class="card">
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/strock_box_2.svg?v=1689069800"
+                          alt=""
+                          class="stock-sine">
+                        <span class="type">
+                          {{ block.settings.block_title }}
+                        </span>
+                        <div class="price">
+                          <span class="number">
+                            ${{ block.settings.block_price }}
+                          </span>
+                          <span class="month">
+                            /{{ block.settings.block_duration }}
+                          </span>
+                        </div>
+                        <ul class="checklist">
+                          {% if block.settings.block_list1_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list1_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list2_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list2_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list3_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list3_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list4_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list4_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list5_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list5_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list6_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list6_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                        </ul>
+                        {% if block.settings.block_btn_text != blank %}
+                          <a href="{{ block.settings.block_btn_link }}" class="btn btn-orange">
+                            {{ block.settings.block_btn_text }}
+                          </a>
+                        {% endif %}
+                      </div>
+                    </div>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        {% endif; %}
+        {% if section.settings.tab_head_title_4 != blank %}
+          <div id="panel4" class="panel">
+            <div class="row">
+              {% for block in section.blocks %}
+                {% if block.type == 'block-1' %}
+                  {% if block.settings.tab_for == section.settings.tab_head_title_4 %}
+                    <div class="col-6">
+                      <div class="card">
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/strock_sine.svg?v=1689069096"
+                          alt=""
+                          class="stock-sine">
+                        <span class="type">
+                          {{ block.settings.block_title }}
+                        </span>
+                        <div class="price">
+                          <span class="number">
+                            ${{ block.settings.block_price }}
+                          </span>
+                          <span class="month">
+                            /{{ block.settings.block_duration }}
+                          </span>
+                        </div>
+                        <ul class="checklist">
+                          {% if block.settings.block_list1_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list1_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list2_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list2_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list3_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list3_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list4_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list4_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list5_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list5_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list6_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list6_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                        </ul>
+                        {% if block.settings.block_btn_text != blank %}
+                          <a href="{{ block.settings.block_btn_link }}" class="btn site-btn">
+                            {{ block.settings.block_btn_text }}
+                          </a>
+                        {% endif %}
+                      </div>
+                    </div>
+                  {% endif %}
+                {% endif %}
+                {% if block.type == 'block-2' %}
+                  {% if block.settings.tab_for == section.settings.tab_head_title_3 %}
+                    <div class="col-6">
+                      <div class="card">
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/strock_box_2.svg?v=1689069800"
+                          alt=""
+                          class="stock-sine">
+                        <span class="type">
+                          {{ block.settings.block_title }}
+                        </span>
+                        <div class="price">
+                          <span class="number">
+                            ${{ block.settings.block_price }}
+                          </span>
+                          <span class="month">
+                            /{{ block.settings.block_duration }}
+                          </span>
+                        </div>
+                        <ul class="checklist">
+                          {% if block.settings.block_list1_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list1_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list2_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list2_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list3_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list3_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list4_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list4_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list5_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list5_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list6_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list6_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                        </ul>
+                        {% if block.settings.block_btn_text != blank %}
+                          <a href="{{ block.settings.block_btn_link }}" class="btn btn-orange">
+                            {{ block.settings.block_btn_text }}
+                          </a>
+                        {% endif %}
+                      </div>
+                    </div>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        {% endif; %}
+        {% if section.settings.tab_head_title_5 != blank %}
+          <div id="panel5" class="panel">
+            <div class="row">
+              {% for block in section.blocks %}
+                {% if block.type == 'block-1' %}
+                  {% if block.settings.tab_for == section.settings.tab_head_title_5 %}
+                    <div class="col-6">
+                      <div class="card">
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/strock_sine.svg?v=1689069096"
+                          alt=""
+                          class="stock-sine">
+                        <span class="type">
+                          {{ block.settings.block_title }}
+                        </span>
+                        <div class="price">
+                          <span class="number">
+                            ${{ block.settings.block_price }}
+                          </span>
+                          <span class="month">
+                            /{{ block.settings.block_duration }}
+                          </span>
+                        </div>
+                        <ul class="checklist">
+                          {% if block.settings.block_list1_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list1_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list2_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list2_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list3_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list3_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list4_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list4_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list5_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list5_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list6_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/check-orange.svg?v=1689066238"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list6_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                        </ul>
+                        {% if block.settings.block_btn_text != blank %}
+                          <a href="{{ block.settings.block_btn_link }}" class="btn site-btn">
+                            {{ block.settings.block_btn_text }}
+                          </a>
+                        {% endif %}
+                      </div>
+                    </div>
+                  {% endif %}
+                {% endif %}
+                {% if block.type == 'block-2' %}
+                  {% if block.settings.tab_for == section.settings.tab_head_title_3 %}
+                    <div class="col-6">
+                      <div class="card">
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/strock_box_2.svg?v=1689069800"
+                          alt=""
+                          class="stock-sine">
+                        <span class="type">
+                          {{ block.settings.block_title }}
+                        </span>
+                        <div class="price">
+                          <span class="number">
+                            ${{ block.settings.block_price }}
+                          </span>
+                          <span class="month">
+                            /{{ block.settings.block_duration }}
+                          </span>
+                        </div>
+                        <ul class="checklist">
+                          {% if block.settings.block_list1_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list1_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list2_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list2_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list3_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list3_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list4_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list4_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list5_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list5_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                          {% if block.settings.block_list6_text != blank %}
+                            <li>
+                              <div class="icon">
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/sine-1.svg?v=1689069601"
+                                  alt=""
+                                  class="icon-img">
+                              </div>
+                              <span class="text">
+                                {{ block.settings.block_list6_text }}
+                              </span>
+                            </li>
+                          {% endif %}
+                        </ul>
+                        {% if block.settings.block_btn_text != blank %}
+                          <a href="{{ block.settings.block_btn_link }}" class="btn btn-orange">
+                            {{ block.settings.block_btn_text }}
+                          </a>
+                        {% endif %}
+                      </div>
+                    </div>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        {% endif; %}
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  $(document).ready(function() {
+    $('.tabs a').click(function() {
+      $('.panel').hide();
+      $('.tabs a.active').removeClass('active');
+      $(this).addClass('active');
+      var panel = $(this).attr('href');
+      $(panel).fadeIn(1000);
+      return false;
+    });
+    $('.tabs li:nth-child(3) a').click();
+  });
+</script>
+{% schema %}
+  {
+    "name": "Information table section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "tab_head_title_1",
+        "label": "Tab heading title 1"
+      },
+      {
+        "type": "text",
+        "id": "tab_head_title_2",
+        "label": "Tab heading title 2"
+      },
+      {
+        "type": "text",
+        "id": "tab_head_title_3",
+        "label": "Tab heading title 3"
+      },
+      {
+        "type": "text",
+        "id": "tab_head_title_4",
+        "label": "Tab heading title 4"
+      }, {
+        "type": "text",
+        "id": "tab_head_title_5",
+        "label": "Tab heading title 5"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "block-1",
+        "name": "Block 1",
+        "settings": [
+          {
+            "type": "text",
+            "id": "tab_for",
+            "label": "For the tab"
+          },
+          {
+            "type": "text",
+            "id": "block_title",
+            "label": "Title"
+          },
+          {
+            "type": "number",
+            "id": "block_price",
+            "label": "Price"
+          },
+          {
+            "type": "text",
+            "id": "block_duration",
+            "label": "Duration"
+          }, {
+            "type": "text",
+            "id": "block_list1_text",
+            "label": "List 1 text"
+          }, {
+            "type": "text",
+            "id": "block_list2_text",
+            "label": "List 2 text"
+          }, {
+            "type": "text",
+            "id": "block_list3_text",
+            "label": "List 3 text"
+          }, {
+            "type": "text",
+            "id": "block_list4_text",
+            "label": "List 4 text"
+          }, {
+            "type": "text",
+            "id": "block_list5_text",
+            "label": "List 5 text"
+          }, {
+            "type": "text",
+            "id": "block_list6_text",
+            "label": "List 6 text"
+          }, {
+            "type": "text",
+            "id": "block_btn_text",
+            "label": "Button title"
+          }, {
+            "type": "url",
+            "id": "block_btn_link",
+            "label": "Button link"
+          }
+        ]
+      }, {
+        "type": "block-2",
+        "name": "Block 2",
+        "settings": [
+          {
+            "type": "text",
+            "id": "tab_for",
+            "label": "For the tab"
+          },
+          {
+            "type": "text",
+            "id": "block_title",
+            "label": "Title"
+          },
+          {
+            "type": "number",
+            "id": "block_price",
+            "label": "Price"
+          },
+          {
+            "type": "text",
+            "id": "block_duration",
+            "label": "Duration"
+          }, {
+            "type": "text",
+            "id": "block_list1_text",
+            "label": "List 1 text"
+          }, {
+            "type": "text",
+            "id": "block_list2_text",
+            "label": "List 2 text"
+          }, {
+            "type": "text",
+            "id": "block_list3_text",
+            "label": "List 3 text"
+          }, {
+            "type": "text",
+            "id": "block_list4_text",
+            "label": "List 4 text"
+          }, {
+            "type": "text",
+            "id": "block_list5_text",
+            "label": "List 5 text"
+          }, {
+            "type": "text",
+            "id": "block_list6_text",
+            "label": "List 6 text"
+          }, {
+            "type": "text",
+            "id": "block_btn_text",
+            "label": "Button title"
+          }, {
+            "type": "url",
+            "id": "block_btn_link",
+            "label": "Button link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Information table section"
+      }
+    ]
+  }
+{% endschema %}

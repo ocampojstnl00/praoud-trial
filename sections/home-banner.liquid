@@ -1,0 +1,177 @@
+<section class="section section-home-banner">
+  <div class="page-width">
+    <div class="row">
+      <div class="col-6 title-column">
+        <h1>
+          {{ section.settings.banner_title }}
+        </h1>
+        <p class="description">
+          {{ section.settings.banner_subtitle }}
+
+        </p>
+        <div class="row btn-row">
+          {% if section.settings.banner_btn_title != blank %}
+            <a href=" {{ section.settings.banner_btn_link }}" class="btn btn-orange">
+              {{ section.settings.banner_btn_title }}
+            </a>
+          {% endif %}
+          <a href="" class="watch-link">
+            <img src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/video_button.svg?v=1688961614" alt="video btn">
+            <span>Watch a Video</span>
+          </a>
+        </div>
+        <img
+          class="abstract-drops"
+          src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/abstract-drops.svg?v=1688965037"
+          alt="Abstract">
+      </div>
+      <div class="col-6 images-column">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/T_shirt.svg?v=1688965736"
+          alt="T shirt"
+          class="t-shirt">
+        <img
+          class="abstract-drops"
+          src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/abstract-drops.svg?v=1688965037"
+          alt="Abstract">
+        <div class="list-item-container">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/abstrack_orange.svg?v=1688967233"
+            alt=""
+            class="abstract-orange">
+          <ul class="list-icons">
+
+
+            {% for block in section.blocks %}
+              <li>
+                <div class="icon">
+                  <img
+                    src="{{ block.settings.icon_list_icon | img_url }}"
+                    alt=""
+                    class="origin-icon">
+                </div>
+                <div class="text">
+                  <h4>
+                    {{ block.settings.icon_list_title }}
+                  </h4>
+                  <span>
+                    {{ block.settings.icon_list_text }}
+                  </span>
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="search-form-container">
+      <form action="">
+        <div class="row">
+          <div class="col">
+            <div class="dropdown-container active">
+              <h5>Location</h5>
+              <select name="" id="">
+                <option value="">United stated</option>
+              </select>
+            </div>
+          </div>
+          <div class="col">
+            <div class="dropdown-container">
+              <h5>Date</h5>
+              <select name="" id="">
+                <option value="">14-12-21</option>
+              </select>
+            </div>
+          </div>
+          <div class="col">
+            <div class="dropdown-container">
+              <h5>Year</h5>
+              <select name="" id="">
+                <option value="">793 AD</option>
+              </select>
+            </div>
+          </div>
+          <div class="col">
+            <div class="dropdown-container">
+              <h5>Type</h5>
+              <select name="" id="">
+                <option value="">Weapons</option>
+              </select>
+            </div>
+          </div>
+          <div class="col">
+            <div class="btn-container">
+              <button type="submit" class="btn btn-orange">
+                <img src="https://cdn.shopify.com/s/files/1/0786/7560/7831/files/search-icon.svg?v=1688974439" alt="">
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+{% schema %}
+  {
+    "name": "Home banner",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Banner contents"
+      },
+      {
+        "type": "text",
+        "id": "banner_title",
+        "label": "Banner title",
+        "default": "Enter text here"
+      },
+      {
+        "type": "textarea",
+        "id": "banner_subtitle",
+        "label": "Banner subtitle",
+        "default": "Welcome to my shop!"
+      },
+      {
+        "type": "header",
+        "content": "Buttons and links"
+      }, {
+        "type": "text",
+        "id": "banner_btn_title",
+        "label": "Button title",
+        "default": "Explore"
+      }, {
+        "type": "url",
+        "id": "banner_btn_link",
+        "label": "Button link",
+        "default": "/"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "icon-list",
+        "type": "Icon-List",
+        "settings": [
+          {
+            "type": "text",
+            "id": "icon_list_title",
+            "label": "Icon list title"
+          }, {
+            "type": "text",
+            "id": "icon_list_text",
+            "label": "Icon list text"
+          }, {
+            "type": "image_picker",
+            "id": "icon_list_icon",
+            "label": "Icon list icon"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Home banner"
+      }
+    ]
+  }
+{% endschema %}

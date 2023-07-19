@@ -1,0 +1,59 @@
+<section class="section section-counting-cards">
+    <div class="page-width">
+        <div class="row">
+           {% for block in section.blocks %}
+                  <div class="col-4">
+                      <div class="num-container">
+                          <span class="number">
+                              {{ block.settings.card_number }}
+                          </span>
+                          <span class="sign">
+                             {{ block.settings.card_sign }}
+                          </span>
+                      </div>
+                      <p>{{ block.settings.card_text }}</p>
+                  </div>
+              {% endfor %}
+        </div>
+    </div>
+</section>
+{% schema %}
+    {
+      "name": "Counting card section",
+      "settings": [
+        
+      ]
+      ,
+      "blocks" : [
+          {
+            "name" : "counting-cards",
+            "type" : "Counting-Cards",
+            "settings" :
+            [
+              {
+                "type": "number",
+                "id": "card_number",
+                "label": "Card number"
+              },
+              {
+                "type": "text",
+                "id": "card_sign",
+                "label": "Card sign"
+              }
+              ,
+              {
+                "type": "text",
+                "id": "card_text",
+                "label": "Card text"
+              }
+            ]
+          }
+      ]
+      ,
+      "presets": [
+        {
+          "name": "Counting card section"
+        }
+      ]
+    }
+{% endschema %}

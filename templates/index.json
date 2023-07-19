@@ -1,0 +1,379 @@
+{
+  "sections": {
+    "5db8b29f-5acb-4a2b-8810-b6de741f7854": {
+      "type": "home-banner",
+      "blocks": {
+        "9d718f48-55d1-466c-b4ff-b42c617e845c": {
+          "type": "Icon-List",
+          "settings": {
+            "icon_list_title": "1332",
+            "icon_list_text": "Year",
+            "icon_list_icon": "shopify:\/\/shop_images\/Year_icon_ce1753b2-bb39-4480-8752-32a4b5957319.svg"
+          }
+        },
+        "e78508c5-1d2d-4bbf-9141-a2cc0b7de9e1": {
+          "type": "Icon-List",
+          "settings": {
+            "icon_list_title": "28",
+            "icon_list_text": "Bids so far",
+            "icon_list_icon": "shopify:\/\/shop_images\/bids_icon_1824b838-77c2-4ed7-9bb9-0022450d7870.svg"
+          }
+        },
+        "3bbc1bba-ae69-4501-9201-e02bc02c89aa": {
+          "type": "Icon-List",
+          "settings": {
+            "icon_list_title": "United",
+            "icon_list_text": "Origin",
+            "icon_list_icon": "shopify:\/\/shop_images\/origin_icon_6cd0885a-4d42-4c45-a138-8fbfebaec7a9.svg"
+          }
+        }
+      },
+      "block_order": [
+        "9d718f48-55d1-466c-b4ff-b42c617e845c",
+        "e78508c5-1d2d-4bbf-9141-a2cc0b7de9e1",
+        "3bbc1bba-ae69-4501-9201-e02bc02c89aa"
+      ],
+      "settings": {
+        "banner_title": "All Your Style <br><span class=\"orange-text\">Are Here<\/span>",
+        "banner_subtitle": "This e commerce website is a platform where you can order or <br>purchase electronic items. You can also find different items.",
+        "banner_btn_title": "Explore Now",
+        "banner_btn_link": "shopify:\/\/pages\/shop"
+      }
+    },
+    "image_banner": {
+      "type": "image-banner",
+      "disabled": true,
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Browse our latest products",
+            "heading_size": "h0"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "inverse",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "d35e2782-6c8b-42e6-ba84-d0bbc08dbcaf": {
+      "type": "experience-section",
+      "settings": {
+        "section_title": "Our experience to always update the lates stayles”"
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Our best seller product",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "2c8db666-8f76-4202-984a-b990070f2c6f": {
+      "type": "tabs",
+      "blocks": {
+        "f612ee46-b0d8-422d-958a-24208cfb3c07": {
+          "type": "Tab",
+          "settings": {
+            "tab_head_title": "All",
+            "tab_content_title": "<h2>Why <br\/>Choose Us<\/h2>",
+            "tab_content_text": "<p>Get lost on the beautiful beaches of United, or get caught up in the wildness of the night life. Its up to you. Nihil quaeque moderatius quo ut, eu vix noster fierent<\/p>",
+            "tab_btn_text": "ORDER NOW",
+            "tab_content_link": "#",
+            "tab_thumbnail": "shopify:\/\/shop_images\/thumbnail.png",
+            "tab_small_image": "shopify:\/\/shop_images\/blackthumb.png"
+          }
+        },
+        "573366c8-fb95-44a0-9fc1-9c524d7d6c60": {
+          "type": "Tab",
+          "settings": {
+            "tab_head_title": "Assecories",
+            "tab_content_title": "<h2>Why choose Accesories<\/h2>",
+            "tab_content_text": "<p>Get lost on the beautiful beaches of United, or get caught up in the wildness of the night life. Its up to you. <\/p>",
+            "tab_btn_text": "ORDER NOW",
+            "tab_content_link": "#",
+            "tab_thumbnail": "shopify:\/\/shop_images\/blackthumb.png",
+            "tab_small_image": "shopify:\/\/shop_images\/thumbnail.png"
+          }
+        },
+        "afefb39f-2bae-4966-83c8-b2bcf73bd94f": {
+          "type": "Tab",
+          "settings": {
+            "tab_head_title": "Catagories",
+            "tab_content_title": "<h2>Why Choose catagories<\/h2>",
+            "tab_content_text": "<p>Get lost on the beautiful beaches of United, or get caught up in the wildness of the night life. Its up to you. Nihil quaeque moderatius quo ut, eu vix noster fierent <\/p>",
+            "tab_btn_text": "ORDER NOW",
+            "tab_content_link": "#",
+            "tab_thumbnail": "shopify:\/\/shop_images\/thumbnail.png",
+            "tab_small_image": "shopify:\/\/shop_images\/blackthumb.png"
+          }
+        },
+        "c3b2e404-518d-422c-96ad-5cde87da52bf": {
+          "type": "Tab",
+          "settings": {
+            "tab_head_title": "T-sirt",
+            "tab_content_title": "<h2>Why <\/h2><h2>Choose Us<\/h2>",
+            "tab_content_text": "<p>Get lost on the beautiful beaches of United, or get caught up in the wildness of the night life. Its up to you. Nihil quaeque moderatius quo ut, eu vix noster fierent <\/p>",
+            "tab_btn_text": "ORDER NOW",
+            "tab_content_link": "#",
+            "tab_thumbnail": "shopify:\/\/shop_images\/thumbnail.png",
+            "tab_small_image": "shopify:\/\/shop_images\/blackthumb.png"
+          }
+        }
+      },
+      "block_order": [
+        "f612ee46-b0d8-422d-958a-24208cfb3c07",
+        "573366c8-fb95-44a0-9fc1-9c524d7d6c60",
+        "afefb39f-2bae-4966-83c8-b2bcf73bd94f",
+        "c3b2e404-518d-422c-96ad-5cde87da52bf"
+      ],
+      "settings": {}
+    },
+    "892c78b5-1555-42e5-9be2-b0711aec7197": {
+      "type": "card-carousel",
+      "blocks": {
+        "55a26af0-c076-4be5-8345-1531707562a0": {
+          "type": "Cards",
+          "settings": {
+            "card_title": "Years Experience",
+            "card_text": "Fashion yourself as a Payfast application user",
+            "card_icon": "shopify:\/\/shop_images\/Experience.svg",
+            "link_title": "Read More",
+            "url_link": "\/",
+            "btn_title": "See More",
+            "btn_link": "\/"
+          }
+        },
+        "345d13c5-91d7-4a57-8a16-4af509d9ceeb": {
+          "type": "Cards",
+          "settings": {
+            "card_title": "Achievment",
+            "card_text": "Create a new Fashion for you to use anytime and anywhere",
+            "card_icon": "shopify:\/\/shop_images\/achievment.svg",
+            "link_title": "Read More",
+            "url_link": "\/",
+            "btn_title": "See More",
+            "btn_link": "\/"
+          }
+        },
+        "b3d7fe82-6bc0-455f-a5f7-333c98fbb654": {
+          "type": "Cards",
+          "settings": {
+            "card_title": "Positif Review",
+            "card_text": "You can use T-shirt in peace and all its facilities",
+            "card_icon": "shopify:\/\/shop_images\/Experience.svg",
+            "link_title": "Read More",
+            "url_link": "\/",
+            "btn_title": "See More",
+            "btn_link": "\/"
+          }
+        },
+        "22023d76-0bec-4f9a-879b-b9e8cee6b4c0": {
+          "type": "Cards",
+          "settings": {
+            "card_title": "Achievment",
+            "card_text": "Create a new Fashion for you to use anytime and anywhere",
+            "card_icon": "shopify:\/\/shop_images\/positive.svg",
+            "link_title": "Read More",
+            "url_link": "\/",
+            "btn_title": "See More",
+            "btn_link": "\/"
+          }
+        }
+      },
+      "block_order": [
+        "55a26af0-c076-4be5-8345-1531707562a0",
+        "345d13c5-91d7-4a57-8a16-4af509d9ceeb",
+        "b3d7fe82-6bc0-455f-a5f7-333c98fbb654",
+        "22023d76-0bec-4f9a-879b-b9e8cee6b4c0"
+      ],
+      "settings": {}
+    },
+    "10079623-829f-4b8b-83c2-615fec0ef3fd": {
+      "type": "counting-card",
+      "blocks": {
+        "d0c7989a-2a24-41ad-baa0-6ed743829c6b": {
+          "type": "Counting-Cards",
+          "settings": {
+            "card_number": 36,
+            "card_sign": "+",
+            "card_text": "User Trust"
+          }
+        },
+        "4610e666-9b7c-4041-a97a-2cc86daf91d8": {
+          "type": "Counting-Cards",
+          "settings": {
+            "card_number": 42,
+            "card_sign": "k+",
+            "card_text": "Brand Vision"
+          }
+        },
+        "fc43afc7-0999-41a2-9050-b6ab1cd3ff6e": {
+          "type": "Counting-Cards",
+          "settings": {
+            "card_number": 8,
+            "card_sign": "k+",
+            "card_text": "Achievment"
+          }
+        }
+      },
+      "block_order": [
+        "d0c7989a-2a24-41ad-baa0-6ed743829c6b",
+        "4610e666-9b7c-4041-a97a-2cc86daf91d8",
+        "fc43afc7-0999-41a2-9050-b6ab1cd3ff6e"
+      ],
+      "settings": {}
+    },
+    "78a5e8f6-d4ed-4d72-a7e0-eebdef22f648": {
+      "type": "collection-list",
+      "blocks": {
+        "template--19785278718231__78a5e8f6-d4ed-4d72-a7e0-eebdef22f648-1689053988137bb1b8-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "new-lookbook-summer",
+            "collection_tag": "Collection 2021"
+          }
+        },
+        "template--19785278718231__78a5e8f6-d4ed-4d72-a7e0-eebdef22f648-1689053988137bb1b8-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "new-lookbook",
+            "collection_tag": "Collection 2021"
+          }
+        },
+        "template--19785278718231__78a5e8f6-d4ed-4d72-a7e0-eebdef22f648-1689053988137bb1b8-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "new-lookbook-winter",
+            "collection_tag": "Collection 2021"
+          }
+        }
+      },
+      "block_order": [
+        "template--19785278718231__78a5e8f6-d4ed-4d72-a7e0-eebdef22f648-1689053988137bb1b8-0",
+        "template--19785278718231__78a5e8f6-d4ed-4d72-a7e0-eebdef22f648-1689053988137bb1b8-1",
+        "template--19785278718231__78a5e8f6-d4ed-4d72-a7e0-eebdef22f648-1689053988137bb1b8-2"
+      ],
+      "settings": {
+        "title": "Trending Ourfit Of The Day.",
+        "section_description_text": "<p>The e-commerce site has an eye catching design and is perfect for people who want to buy different items, but don't have time for shopping.<\/p>",
+        "section_btn_text": "Explore",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "e8bfaa1b-47f1-4000-af9d-aebcf4e5c452": {
+      "type": "info-table",
+      "blocks": {
+        "ef84eb37-27c3-4e1a-9fb2-aab471f9fa4c": {
+          "type": "block-1",
+          "settings": {
+            "tab_for": "Pricing",
+            "block_title": "Personal",
+            "block_price": 12,
+            "block_duration": "month",
+            "block_list1_text": "Unlock Special Fiture",
+            "block_list2_text": "Coud service",
+            "block_list3_text": "Unlimited Saved",
+            "block_list4_text": "All Type of File",
+            "block_list5_text": "Update SUpport",
+            "block_list6_text": "For 2 Device",
+            "block_btn_text": "GET STARTED",
+            "block_btn_link": "#"
+          }
+        },
+        "a554be2e-a240-438b-b5d3-016bae432a73": {
+          "type": "block-2",
+          "settings": {
+            "tab_for": "Pricing",
+            "block_title": "Team",
+            "block_price": 12,
+            "block_duration": "month",
+            "block_list1_text": "Unlock Special Fiture",
+            "block_list2_text": "Coud service",
+            "block_list3_text": "Unlimited Saved",
+            "block_list4_text": "All Type of File",
+            "block_list5_text": "Update SUpport",
+            "block_list6_text": "For 2 Device",
+            "block_btn_text": "GET STARTED",
+            "block_btn_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "ef84eb37-27c3-4e1a-9fb2-aab471f9fa4c",
+        "a554be2e-a240-438b-b5d3-016bae432a73"
+      ],
+      "settings": {
+        "tab_head_title_1": "Payments",
+        "tab_head_title_2": "Refunds",
+        "tab_head_title_3": "Pricing",
+        "tab_head_title_4": "Shipping",
+        "tab_head_title_5": "Other"
+      }
+    }
+  },
+  "order": [
+    "5db8b29f-5acb-4a2b-8810-b6de741f7854",
+    "image_banner",
+    "d35e2782-6c8b-42e6-ba84-d0bbc08dbcaf",
+    "featured_collection",
+    "2c8db666-8f76-4202-984a-b990070f2c6f",
+    "892c78b5-1555-42e5-9be2-b0711aec7197",
+    "10079623-829f-4b8b-83c2-615fec0ef3fd",
+    "78a5e8f6-d4ed-4d72-a7e0-eebdef22f648",
+    "e8bfaa1b-47f1-4000-af9d-aebcf4e5c452"
+  ]
+}
